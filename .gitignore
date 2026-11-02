@@ -1,1 +1,19 @@
-*.dSYM
+# ── 编译产物 ──
+bin/
+*.dSYM/
+*.o
+*.obj
+*.exe
+*.out
+a.out
+
+# ── IDE 与临时文件 ──
+tempCodeRunnerFile.cpp
+*.code-workspace
+
+# ── 系统垃圾 ──
+.DS_Store
+Thumbs.db
+
+# ── 不想进仓库的目录 ──
+Lan-Sty/
