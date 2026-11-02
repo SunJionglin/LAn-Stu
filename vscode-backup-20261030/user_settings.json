@@ -1,0 +1,64 @@
+{
+    "files.autoSave": "afterDelay",
+    "files.associations": {
+        "*.cpp": "cpp"
+    },
+    "editor.fontSize": 20,
+    "workbench.statusBar.visible": false,
+    "workbench.colorTheme": "One Dark Pro Night Flat",
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "editor.quickSuggestions": {
+        "comments": "on",
+        "strings": "on"
+    },
+    "explorer.confirmDelete": false,
+    "editor.fontWeight": "normal",
+    // 关闭语义高亮，确保颜色配置生效
+    "editor.semanticHighlighting.enabled": false,
+    // 合法的#RRGGBBAA格式（最后两位=透明度，FF=100%不透明）
+    "workbench.colorCustomizations": {
+        "editor.foreground": "#FFFFFFFF", // 白色 + 100%不透明（最高值）
+        "editorComment.foreground": "#636D83FF", // 注释色 + 100%不透明
+        "editorKeyword.foreground": "#C678DDFF", // 关键字 + 100%不透明
+        "editorString.foreground": "#98C379FF", // 字符串 + 100%不透明
+        "editorNumber.foreground": "#D19A66FF"  // 数字 + 100%不透明
+    },
+    // 背景图配置（英文路径避免URL错误）
+    "background.enabled": false,
+    "background.fullscreen": {
+        "images": [
+            "file:///Users/jionglin/Pictures/wallpaper/v2-55db1cb5f7db3d0f7daed22bf75fa3f4_1440w.jpg"
+        ],
+        "opacity": 0.6,
+        "size": "cover",
+        "position": "center",
+        "interval": 0,
+        "random": false
+    },
+    "background.sidebar": {},
+    "background.panel": {},
+    "backgroundCover.imagePath": "",
+    "backgroundCover.opacity": 0.55,
+    "backgroundCover.blendModel": "auto",
+    "backgroundCover.randomImageFolder": "/Users/jionglin/Pictures/Wallpaper",
+    "backgroundCover.blur": 0,
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.ignoreSelection": true,
+    "code-runner.runInTerminal": true,
+    "code-runner.saveAllFilesBeforeRun": true,
+    "code-runner.saveFileBeforeRun": true,
+    "C_Cpp.debugShortcut": false,
+    "code-runner.preserveFocus": false,
+    "files.exclude": {
+        "**/*.exe": true
+    },
+    "code-runner.executorMap": {
+        "cpp": "cd $dir && g++ $fileName -o bin/$fileNameWithoutExt && bin/$fileNameWithoutExt"
+    },
+    "C_Cpp.files.exclude": {
+
+        "**/.vscode": true,
+        "**/.vs": true
+    }
+
+}
