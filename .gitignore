@@ -15,5 +15,5 @@ tempCodeRunnerFile.cpp
 .DS_Store
 Thumbs.db
 
-# ── 不想进仓库的目录 ──
-Lan-Sty/
+# ── 系统垃圾（补） ──
+*.log
