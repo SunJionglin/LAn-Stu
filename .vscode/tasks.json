@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "C/C++: clang++ 生成活动文件",
+            "type": "shell",
+            "command": "mkdir -p \"${fileDirname}/bin\" && /usr/bin/clang++ -fcolor-diagnostics -std=c++17 -g \"${file}\" -o \"${fileDirname}/bin/${fileBasenameNoExtension}\"",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "产物（可执行 + .dSYM）全部落在 bin/，根目录只留 .cpp"
+        }
+    ]
+}
