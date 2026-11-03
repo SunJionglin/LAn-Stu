@@ -13,9 +13,32 @@
             ],
             "group": {
                 "kind": "build",
-                "isDefault": true
+                "isDefault": false
             },
             "detail": "产物（可执行 + .dSYM）全部落在 bin/，根目录只留 .cpp"
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++ 生成活动文件",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "调试器生成的任务。"
         }
     ]
 }
